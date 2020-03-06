@@ -1,0 +1,32 @@
+def sum(a=0,b=0):
+    c=a+b
+    print("sum",c)
+def sub(a=0,b=0):
+    c=a-b
+    print("sub",c)
+def mul(a=0,b=0):
+    c=a*b
+    print("mul",c)
+def div(a=0,b=0):
+    c=a/b
+    print("div",c)
+x=0
+while(x==0):
+
+    a=int(input("enter the first number : "))
+    b=int(input("enter the second number : "))
+    print("1. Add")
+    print("2. Sub")
+    print("3. mul")
+    print("4. div")
+    c=input("enter the operation : ")
+
+    if c=="1":
+        sum(a,b)
+    elif c=="2":
+        sub(a,b)
+    elif c=="3":
+        mul(a,b)
+    elif c=="4":
+        div(a,b)
+    x=int(input("enter 0 to continue"))
